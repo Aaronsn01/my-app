@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "bg-background font-sans antialiased grid grid-rows-[min-content_1fr_min-content] max-h-screen h-screen w-full overflow-y-auto",
+          "bg-white font-sans antialiased grid grid-rows-[min-content_1fr_min-content] max-h-screen h-screen w-full overflow-y-auto",
           fontSans.variable
         )}
       >

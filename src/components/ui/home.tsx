@@ -18,7 +18,7 @@ export default function Home() {
       <div className="flex justify-center">
         <Image src={image} alt="imagen home" />
       </div>
-      <div className="flex justify-center ">
+      <div className="flex justify-center absolute top-[90%] transform -translate-y-1/2 w-full">
         <Barra/>
       </div>
     </div>

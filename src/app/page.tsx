@@ -6,7 +6,7 @@ import Contact from "../components/ui/contact";
 
 export default function Page() {
   return (
-    <div className="grid grid-rows-[min-content_1fr] max-h-screen h-screen w-full overflow-y-auto">
+    <div className="grid grid-rows-[min-content_1fr] max-h-screen h-screen w-full overflow-y-auto gap-20">
     <Home />
     <About />
     <Location />
