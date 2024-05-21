@@ -55,6 +55,7 @@ const config = {
           DEFAULT: "var(--card)",
           foreground: "var(--card-foreground)",
         },
+        customGray: "#CFCFCF",
       },
       borderRadius: {
         lg: "var(--radius)",
