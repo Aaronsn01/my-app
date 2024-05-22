@@ -1,8 +1,8 @@
-import React from "react";
 import Instagram from "../icons/instagram";
 import Facebook from "../icons/facebook";
 import Tiktok from "../icons/tiktok";
 import CartaIcon from "../icons/carta-icon";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -13,7 +13,9 @@ export default function Footer() {
             READY FOR YOUR <span className="text-primary">NEXT</span> LESSON?
           </p>
           <div className="flex flex-row items-center justify-center md:justify-end gap-4 mt-4 md:mt-0">
-            <Instagram className="h-6 w-6" />
+            <Link href={"https"}>
+              <Instagram className="h-6 w-6" />
+            </Link>
             <Facebook className="h-6 w-6" />
             <Tiktok className="h-6 w-6" />
           </div>
