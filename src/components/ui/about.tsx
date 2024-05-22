@@ -11,9 +11,9 @@ export default function About() {
         </div>
         <div className="flex flex-row w-full gap-2 h-fit">
           {" "}
-          <Separator className="w-3 h-28" />
+          <Separator className="w-3 h-20" />
           <div className="flex flex-col justify-center items-start space-y-4">
-            <h2 className="text-3xl font-bold text-black w-1/2">
+            <h2 className="text-3xl font-bold text-black ">
               HOW WE GOT STARTED IN THIS BUSINESS
             </h2>
             <p className="text-black">

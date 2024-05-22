@@ -2,7 +2,7 @@ import React from "react";
 import boxerImage from "../img/crossfit-home.jpg"; // Asegúrate de cambiar esta ruta a la ubicación de tu imagen
 import Image from "next/image";
 import image from "../../../public/image.png";
-import Barra from "./nav-home";
+import Barra from "./barra";
 
 export default function Home() {
   return (

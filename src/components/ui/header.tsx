@@ -12,7 +12,7 @@ export default function Header() {
           <a href="#about">ABOUT</a>
           <a href="#location">LOCATION</a>
           <a href="#contact">CONTACT</a>
-          <Button className="w-full h-full rounded-full">App</Button>
+          {/* <Button className="w-full h-full rounded-full">App</Button> */}
         </nav>
       </div>
     </div>

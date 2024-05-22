@@ -4,11 +4,6 @@ import { cn } from "@/lib/utils";
 import Footer from "../components/ui/footer";
 import Header from "../components/ui/header";
 
-const fontDmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
-});
-
 export default function RootLayout({
   children,
 }: {
@@ -16,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn("bg-customGray font-sans antialiased", fontDmSans.variable)}>
+      <body className={cn("bg-customGray font-sans antialiased")}>
         <Header />
         {children}
         <Footer />

@@ -13,11 +13,15 @@ export default function Footer() {
             READY FOR YOUR <span className="text-primary">NEXT</span> LESSON?
           </p>
           <div className="flex flex-row items-center justify-center md:justify-end gap-4 mt-4 md:mt-0">
-            <Link href={"https"}>
+            <Link href={"https://www.instagram.com/"}>
               <Instagram className="h-6 w-6" />
             </Link>
-            <Facebook className="h-6 w-6" />
-            <Tiktok className="h-6 w-6" />
+            <Link href={"https://www.tiktok.com/@lajunglacrossfit"}>
+              <Tiktok className="h-6 w-6" />
+            </Link>
+            <Link href={"https://www.facebook.com/"}>
+              <Facebook className="h-6 w-6" />
+            </Link>
           </div>
         </div>
         <div className="w-full flex flex-col md:flex-row items-center justify-between">

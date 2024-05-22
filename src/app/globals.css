@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -74,14 +75,10 @@
 
   * {
     @apply border-border;
-    font-family: var(--font-sans);
+    font-family: "Michroma", sans-serif;
   }
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-sans);
-  }
-
-  .font-clash-display {
-    font-family: var(--font-clash-display);
+    font-family: "Michroma", sans-serif;
   }
 }
