@@ -13,13 +13,13 @@ export default function Footer() {
             READY FOR YOUR <span className="text-primary">NEXT</span> LESSON?
           </p>
           <div className="flex flex-row items-center justify-center md:justify-end gap-4 mt-4 md:mt-0">
-            <Link href={"https://www.instagram.com/"}>
+            <Link href={"https://www.instagram.com/lajunglacrossfit?igsh=MWgzMXl0bWhiYnp1Zg%3D%3D&utm_source=qr "}>
               <Instagram className="h-6 w-6" />
             </Link>
             <Link href={"https://www.tiktok.com/@lajunglacrossfit"}>
               <Tiktok className="h-6 w-6" />
             </Link>
-            <Link href={"https://www.facebook.com/"}>
+            <Link href={"https://www.facebook.com/share/iNyULvz7u5rAGrmU/?mibextid=LQQJ4d"}>
               <Facebook className="h-6 w-6" />
             </Link>
           </div>
@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="w-full flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center justify-center md:justify-start space-x-2 mb-4 md:mb-0">
             <CartaIcon className="h-6 w-6" />
-            <p>jangalcentrodeportivo@gmail.com</p>
+            <p>info@lajunglacrossfit.es</p>
           </div>
           <div className="flex items-center justify-center md:justify-end space-x-4">
             <a href="/terms" className="hover:underline">
