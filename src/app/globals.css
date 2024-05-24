@@ -68,26 +68,23 @@
     --ring: 212.7 26.8% 83.9%;
   }
 
-  /* Agregar desplazamiento suave */
   html {
     scroll-behavior: smooth;
   }
 
   * {
-    @apply border-border;
     font-family: "Michroma", sans-serif;
-
   }
+
   body {
     @apply bg-background text-foreground;
-    font-family: "Michroma", sans-serif;
-    background-image: url('/fondo.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
+    background-image: url('/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
+
   .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aplica sombra solo al texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-  
 }

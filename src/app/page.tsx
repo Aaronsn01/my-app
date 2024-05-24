@@ -5,6 +5,8 @@ import About from "../components/ui/about";
 import Home from "../components/ui/home";
 import Location from "../components/ui/location";
 import Contact from "../components/ui/contact";
+import Reviews from "@/components/ui/reviews";
+import RevealText from "@/components/magicui/text-reveal";
 
 export default function Page() {
   const homeRef = useRef(null);
@@ -25,6 +27,9 @@ export default function Page() {
       </section>
       <section ref={contactRef} id="contact" className=" flex items-center justify-center">
         <Contact />
+      </section>
+      <section className=" flex items-center justify-center">
+        <Reviews />
       </section>
     </div>
   );
