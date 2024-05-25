@@ -1,7 +1,6 @@
 import React from 'react';
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/magicui/marquee";
-import RevealText from '../magicui/text-reveal';
 
 export default function Reviews() {
   const reviews = [
@@ -73,20 +72,16 @@ export default function Reviews() {
       <div
         className={cn(
           "relative w-64 cursor-pointer overflow-hidden rounded-xl p-4 border",
-          // light styles
-          "bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-          // dark styles
-          "dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+          "bg-white text-black hover:bg-gray-200", // Light styles
+          "dark:bg-white dark:text-black dark:hover:bg-gray-200" // Dark styles
         )}
       >
         <figure>
           <div className="flex flex-row items-center gap-2">
             <img className="rounded-full" width="32" height="32" alt="" src={img} />
             <div className="flex flex-col">
-              <figcaption className="text-sm font-medium dark:text-white">
-                {name}
-              </figcaption>
-              <p className="text-xs font-medium dark:text-white/40">{username}</p>
+              <figcaption className="text-sm font-medium">{name}</figcaption>
+              <p className="text-xs font-medium">{username}</p>
             </div>
           </div>
           <blockquote className="mt-2 text-sm">{body}</blockquote>
@@ -97,8 +92,7 @@ export default function Reviews() {
 
   const MarqueeDemo = () => {
     return (
-      <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-20 md:shadow-xl bg-transparent">
-        <RevealText />
+      <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-20 bg-transparent">
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />

@@ -87,4 +87,17 @@
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
+
+  .text-legible {
+    color: #FFFFFF; /* Blanco */
+    text-shadow: 3px 3px 6px #000000; /* Sombra negra */
+  }
+  
+  .text-card {
+    color: #ffffff10;
+  }
+
+  .bg-card{
+    color:#ffffff10;
+  }
 }
