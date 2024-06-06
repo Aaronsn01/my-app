@@ -9,6 +9,7 @@ import Reviews from "@/components/ui/reviews";
 import TypingAnimation from "@/components/magicui/typing-animation";
 import BlurIn from "@/components/magicui/blur-in";
 import GradualSpacing from "@/components/magicui/gradual-spacing";
+import AboutUs from "@/components/ui/about-us";
 
 export default function Page() {
   const homeRef = useRef(null);
@@ -31,9 +32,12 @@ export default function Page() {
         <Location />
       </section>
       <section className="flex flex-col items-center justify-center">
+      <AboutUs/>
+      </section>
+      {/* <section className="flex flex-col items-center justify-center">
         <TypingAnimation text="Usser Reviews" />
         <Reviews />
-      </section>
+      </section> */}
       <section ref={contactRef} id="contact" className="flex flex-col items-center justify-center">
         <GradualSpacing text="Contact Us"/>
         <Contact />

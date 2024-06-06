@@ -2,8 +2,8 @@ export default function AboutImage({ className }: { className?: string }) {
   return (
     <svg
       className="rounded-md"
-      width="625"
-      height="940"
+      width="650"
+      height="850"
       viewBox="0 0 625 940"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
