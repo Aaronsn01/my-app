@@ -1,10 +1,10 @@
-"use client"
-import React, { useRef, useState, FormEvent } from "react";
+"use client";
+import React, { useRef, FormEvent } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import ShimmerButton from "../magicui/shimmer-button";
+import { useToast } from "../../components/ui/use-toast"; 
 
 const ProfileHelpForm = ({
   formRef,
@@ -13,7 +13,7 @@ const ProfileHelpForm = ({
   formRef: React.RefObject<HTMLFormElement>;
   sendEmail: (e: FormEvent) => void;
 }) => (
-  <div className="flex flex-col items-center justify-center bg-black bg-opacity-95 p-7 rounded-xl w-[700px] ">
+  <div className="flex flex-col items-center justify-center bg-black bg-opacity-95 p-7 rounded-xl w-[700px]">
     <form ref={formRef} onSubmit={sendEmail} className="w-full">
       <div className="flex flex-row w-full items-center justify-between gap-4 pb-5">
         <div className="grid w-full max-w-sm items-center gap-1.5">
@@ -24,6 +24,7 @@ const ProfileHelpForm = ({
             name="user_name"
             placeholder="Nombre"
             required
+            className="text-black"
           />
         </div>
         <div className="grid w-full max-w-sm items-center gap-1.5">
@@ -34,6 +35,7 @@ const ProfileHelpForm = ({
             name="user_email"
             placeholder="Correo Electrónico"
             required
+            className="text-black"
           />
         </div>
       </div>
@@ -45,6 +47,7 @@ const ProfileHelpForm = ({
           name="message"
           placeholder="Escribenos aquí tu mensaje."
           required
+          className="text-black"
         />
       </div>
       <div className="flex justify-center items-center mt-4">
@@ -56,8 +59,7 @@ const ProfileHelpForm = ({
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
-  const [message, setMessage] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const { toast } = useToast(); 
 
   const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
@@ -80,23 +82,34 @@ export default function Contact() {
         });
 
         if (response.ok) {
-          setMessage("Mensaje enviado con éxito");
-          setError(null);
+          toast({
+            title: "Mensaje enviado con éxito",
+            description: "Hemos recibido tu mensaje y te contactaremos pronto.",
+            variant: "default",
+          });
           form.current.reset();
         } else {
           const errorData = await response.json();
-          setError(`Hubo un error al enviar el mensaje: ${errorData.error}`);
-          setMessage(null);
+          toast({
+            title: "Error al enviar el mensaje",
+            description: errorData.error,
+            variant: "destructive",
+          });
         }
       } catch (error: unknown) {
         if (error instanceof Error) {
-          setError(`Hubo un error al enviar el mensaje: ${error.message}`);
+          toast({
+            title: "Error al enviar el mensaje",
+            description: error.message,
+            variant: "destructive",
+          });
         } else {
-          setError(
-            "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo."
-          );
+          toast({
+            title: "Error al enviar el mensaje",
+            description: "Por favor, inténtalo de nuevo.",
+            variant: "destructive",
+          });
         }
-        setMessage(null);
       }
     }
   };
@@ -104,8 +117,6 @@ export default function Contact() {
   return (
     <div className="py-20 px-4">
       <ProfileHelpForm formRef={form} sendEmail={sendEmail} />
-      {message && <p className="text-green-500 mt-4">{message}</p>}
-      {error && <p className="text-red-500 mt-4">{error}</p>}
     </div>
   );
 }

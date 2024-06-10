@@ -30,11 +30,8 @@ export default function Footer() {
             <p>info@lajunglacrossfit.es</p>
           </div>
           <div className="flex items-center justify-center md:justify-end space-x-4">
-            <a href="/terms" className="hover:underline">
-              Terms & Conditions
-            </a>
-            <a href="/privacy" className="hover:underline">
-              Privacy Policy
+            <a>
+              © Copyright LaJunglaCrossfit 2024
             </a>
           </div>
         </div>

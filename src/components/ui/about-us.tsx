@@ -24,7 +24,7 @@ export default function AboutUs() {
 
   return (
     <div className="flex flex-col items-center justify-center h-[800px]" id="aboutus">
-      <h1 className="text-6xl mb-16 text-black">About Us</h1>
+      <h1 className="text-[30px] sm:text-5xl md:text-6xl lg:text-8xl font-bold text-black mb-16">About Us</h1>
       <div className="flex flex-row w-full gap-10 max-w-[1200px] justify-between">
         {plans.map((plan, index) => (
           <AboutUsBoxContent

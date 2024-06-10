@@ -3,7 +3,7 @@ export default function AboutImage({ className }: { className?: string }) {
     <svg
       className="rounded-md"
       width="650"
-      height="850"
+      height="875"
       viewBox="0 0 625 940"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

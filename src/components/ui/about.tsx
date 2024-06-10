@@ -10,25 +10,28 @@ export default function About() {
           <AboutImage />
         </div>
         <div className="flex flex-row w-full gap-2 h-fit rounded-md">
-          {" "}
           <Separator className="w-8 h-40" />
           <div className="flex flex-col justify-center items-start space-y-4">
             <h2 className="text-5xl font-bold text-black text-shadow">
               ¿POR QUÉ UNIRTE A LA TRIBU FITNESS?
             </h2>
             <div className="flex flex-col justify-center items-center gap-5 py-10">
-              <li className="text-2xl text-legible px-4 py-3 rounded-md bg-black">
-              Estarás siempre acompañado por entrenadores graduados en la universidad con experiencia en el entrenamiento personal y grupal.
-              </li>
-              <li className="text-2xl text-legible px-4 py-3 rounded-md bg-black">
-              Te acompañaremos para conseguir TUS OBJETIVOS . Sólo necesitamos que vengas a clase . Del resto, nos encargamos nosotros. 
-              </li>
-              <li className="text-2xl text-legible px-4 py-3 rounded-md bg-black">
-              TODAS las actividades son APTAS para TODO el mundo. No importa cual es tu nivel de partida, estaremos a tu lado durante todo el proceso.
-              </li>
-              <li className="text-2xl text-legible px-4 py-3 rounded-md bg-black">
-              Flexibilidad horaria . A través de la app podrás reservar tus clases sin tener que estar atado/a a un horario fijo.
-              </li>
+              <div className="text-1xl text-black px-4 py-3 rounded-md">
+                <h3 className="font-bold text-2xl mb-2">ENTRENADORES EXPERTOS</h3>
+                <p>Estarás siempre acompañado por <strong>entrenadores graduados</strong> en la universidad con experiencia en el entrenamiento personal y grupal.</p>
+              </div>
+              <div className="text-1xl text-black px-4 py-3 rounded-md">
+                <h3 className="font-bold text-2xl mb-2">CONSIGUE TUS OBJETIVOS</h3>
+                <p>Te acompañaremos para conseguir <strong>TUS OBJETIVOS</strong>. Sólo necesitamos que vengas a clase. Del resto, nos encargamos nosotros.</p>
+              </div>
+              <div className="text-1xl text-black px-4 py-3 rounded-md">
+                <h3 className="font-bold text-2xl mb-2">ACTIVIDADES APTAS PARA TODOS</h3>
+                <p><strong>TODAS</strong> las actividades son <strong>APTAS</strong> para <strong>TODO</strong> el mundo. No importa cuál es tu nivel de partida, estaremos a tu lado durante todo el proceso.</p>
+              </div>
+              <div className="text-1xl text-black px-4 py-3 rounded-md">
+                <h3 className="font-bold text-2xl mb-2">FLEXIBILIDAD HORARIA</h3>
+                <p>A través de la <strong>APP</strong> podrás reservar tus clases sin tener que estar atado/a a un horario fijo.</p>
+              </div>
             </div>
           </div>
         </div>

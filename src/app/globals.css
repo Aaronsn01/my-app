@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,6 +38,7 @@
     --radius: 0.5rem;
 
     --font-sans: "DM Sans", sans-serif;
+    --font-nunito: "Nunito" , sans-serif;
   }
 
   .dark {
@@ -78,10 +81,10 @@
 
   body {
     @apply bg-background text-foreground;
-    background-image: url('/fondo.jpg');
+    /* background-image: url('/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
   }
 
   .text-shadow {

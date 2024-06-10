@@ -1,49 +1,22 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import Mailjet from 'node-mailjet';
+import { Resend } from 'resend';
 
-const mailjet = Mailjet.apiConnect(
-  process.env.MJ_APIKEY_PUBLIC as string,
-  process.env.MJ_APIKEY_PRIVATE as string,
-);
+const resend = new Resend(process.env.RESEND_API_KEY!);
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
-    const { from_name, from_email, message } = req.body;
+    const { user_name, user_email, message } = req.body;
 
     try {
-      const request = await mailjet.post('send', { version: 'v3.1' }).request({
-        Messages: [
-          {
-            From: {
-              Email: process.env.MJ_FROM_EMAIL,
-              Name: process.env.MJ_FROM_NAME,
-            },
-            To: [
-              {
-                Email: process.env.MJ_TO_EMAIL,
-                Name: 'La Jungla Crossfit',
-              },
-            ],
-            Subject: `New message from ${from_name}`,
-            TextPart: `Hello,
-
-            You have received a new message from the contact form on your website:
-
-            Name: ${from_name}
-            Email: ${from_email}
-            Message: 
-            ${message}
-
-            Best regards,
-            La Jungla Crossfit Team`,
-          },
-        ],
+      await resend.emails.send({
+        from: 'crossfitlajungla@resend.dev',
+        to: 'info@lajunglacrossfit.es',
+        subject: `Nuevo mensaje de: ${user_name}`,
+        html: `<p>Nombre: ${user_name}</p><p>Email: ${user_email}</p><p>Mensaje: ${message}</p>`,
       });
-
       res.status(200).json({ success: true });
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: 'Error sending email' });
+    } catch (error: any) {
+      res.status(500).json({ error: error.message });
     }
   } else {
     res.status(405).json({ error: 'Method not allowed' });
