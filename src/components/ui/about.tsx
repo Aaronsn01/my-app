@@ -4,7 +4,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function About() {
   return (
-    <div className="container mx-auto py-10 md:py-20 px-4">
+    <div className="container mx-auto py-10 md:py-20 px-4 mt-[-20px]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
         <div className="flex flex-row w-full gap-2 h-fit rounded-md order-1 md:order-1">
           <Separator orientation="vertical" className="w-1 h-8 md:w-8 md:h-40 bg-primary" />
