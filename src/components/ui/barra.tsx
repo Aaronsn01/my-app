@@ -2,8 +2,6 @@ export default function Barra({ className }: { className?: string }) {
   return (
     <svg
       className={className}
-      width="1115"
-      height="310"
       viewBox="0 0 1115 310"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
