@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen">
       <div className="absolute p-4 sm:p-10 lg:pt-48 lg:pl-32 z-50 flex flex-col gap-4">
-        <div className="text-2xl md:text-4xl lg:text-8xl font-bold">
+        <div className="text-4xl md:text-4xl lg:text-6xl font-bold">
           <p className="flex flex-col gap-3">DESCUBRE TU</p>
           <p>
             <span className="text-primary">FUERZA</span>
@@ -19,9 +19,9 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center relative">
-        <Image src={image} alt="imagen home" className="w-full h-1/2 md:h-auto object-cover"/>
+        <Image src={image} alt="imagen home" className="w-full h-[70vh] md:h-[70vh] lg:h-[86vh] object-cover"/>
         <div className="flex justify-center items-end absolute w-full h-full mt-[126px] md:mt-32 lg:mt-10">
-          <Barra className="w-[280px] h-[280px] md:h-[310px] md:w-[1115px]"/>
+          <Barra className="w-[400px] h-[390px] md:h-[310px] md:w-[1115px]"/>
         </div>
       </div>
     </div>

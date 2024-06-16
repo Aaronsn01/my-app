@@ -51,19 +51,28 @@ const SlightFlip = ({
     };
   }, [controls]);
 
+  // Divide the word into lines manually
+  const lines = word.split(" ");
+
   return (
-    <div ref={elementRef} className="flex justify-center space-x-2">
-      {word.split("").map((char, i) => (
-        <motion.span
-          key={i}
-          initial="hidden"
-          animate={controls}
-          variants={framerProps}
-          transition={{ duration, delay: i * delayMultiple }}
-          className={cn("origin-center drop-shadow-sm", className)}
-        >
-          {char}
-        </motion.span>
+    <div ref={elementRef} className="flex flex-wrap justify-center space-x-2 text-center">
+      {lines.map((line, i) => (
+        <div key={i} className="flex">
+          {line.split("").map((char, j) => (
+            <motion.span
+              key={j}
+              initial="hidden"
+              animate={controls}
+              variants={framerProps}
+              transition={{ duration, delay: (i * lines[0].length + j) * delayMultiple }}
+              className={cn("origin-center drop-shadow-sm", className)}
+            >
+              {char}
+            </motion.span>
+          ))}
+          {/* Add a space between words */}
+          {i < lines.length - 1 && <motion.span className={className}> </motion.span>}
+        </div>
       ))}
     </div>
   );

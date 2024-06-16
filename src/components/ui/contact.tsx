@@ -13,9 +13,9 @@ const ProfileHelpForm = ({
   formRef: React.RefObject<HTMLFormElement>;
   sendEmail: (e: FormEvent) => void;
 }) => (
-  <div className="flex flex-col items-center justify-center bg-black bg-opacity-95 p-7 rounded-xl w-[700px]">
+  <div className="flex flex-col items-center justify-center bg-black bg-opacity-95 p-7 rounded-xl w-full max-w-lg md:w-[700px]">
     <form ref={formRef} onSubmit={sendEmail} className="w-full">
-      <div className="flex flex-row w-full items-center justify-between gap-4 pb-5">
+      <div className="flex flex-col md:flex-row w-full items-center justify-between gap-4 pb-5">
         <div className="grid w-full max-w-sm items-center gap-1.5">
           <Label htmlFor="user_name">Nombre</Label>
           <Input

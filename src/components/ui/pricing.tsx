@@ -36,11 +36,11 @@ const Pricing = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gradient-to-b text-white" id="pricing">
-      <WordPullUp words="NUESTRAS TARIFAS" className="font-bold text-black text-6xl mb-8"/>
+      <WordPullUp words="NUESTRAS TARIFAS" className="text-black text-3xl md:text-4xl md:mb-12 lg:text-6xl font-bold mb-8"/>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
         <motion.div 
           ref={ref}
-          className="bg-black p-6 rounded-xl shadow-2xl max-w-sm w-full text-center"
+          className="bg-black p-6 rounded-xl shadow-2xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl text-center"
           initial={{ opacity: 0, y: 50 }}
           animate={controls}
           transition={{ duration: 1.5 }}
@@ -76,8 +76,8 @@ const Pricing = () => {
             <ShimmerButton>CONTÁCTANOS</ShimmerButton>
           </a>
         </motion.div>
-        </div>
       </div>
+    </div>
   );
 };
 

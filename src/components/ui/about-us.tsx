@@ -27,10 +27,9 @@ export default function AboutUs() {
       className="flex flex-col items-center justify-center md:h-[800px] px-8"
       id="aboutus"
     >
-      <SlightFlip
-        word="SOBRE NOSOTROS"
-        className="text-3xl md:text-6xl lg:text-7xl font-bold text-black mb-16"
-      />
+      <div className="text-3xl md:text-4xl lg:text-6xl font-bold text-black mb-16 text-center w-full max-w-xs md:max-w-none">
+        <SlightFlip word="SOBRE NOSOTROS" />
+      </div>
       <div className="flex flex-col md:flex-row w-full gap-10 max-w-[1200px] justify-center items-center">
         {plans.map((plan, index) => (
           <AboutUsBoxContent
