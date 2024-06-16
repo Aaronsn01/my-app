@@ -21,7 +21,7 @@ export default function Home() {
       <div className="flex justify-center relative">
         <Image src={image} alt="imagen home" className="w-full h-[50vh] md:h-[50vh] lg:h-[60vh] object-cover"/> {/* Ajustamos la altura de la imagen */}
         <div className="flex justify-center items-end absolute w-full h-full mt-[126px] md:mt-32 lg:mt-10">
-          <Barra className="w-[300px] h-[350px] sm:w-[400px] sm:h-[250px] md:h-[310px] md:w-[1115px]"/> {/* Ajustamos la altura del SVG */}
+          <Barra className="w-[350px] h-[350px] sm:w-[400px] sm:h-[250px] md:h-[310px] md:w-[1115px]"/> {/* Ajustamos la altura del SVG */}
         </div>
       </div>
     </div>
