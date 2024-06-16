@@ -1,21 +1,20 @@
 import Link from "next/link";
 import React from "react";
 import Logo from "../icons/logo";
-import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <div className="h-[120px] w-full flex flex-row items-center justify-between p-5 gap-10 bg-black text-white">
+    <div className="h-[120px] w-full flex items-center justify-between p-5 bg-black text-white">
+      <div className="w-full flex justify-center sm:justify-start">
         <Logo />
-      <div className="w-full flex flex-row justify-end">
-        <nav className="flex flex-row items-center gap-10 text-lg">
-          <a href="#pricing">PRECIOS</a>
-          <a href="#aboutus">NOSOTROS</a>
-          <a href="#location">UBICACIÓN</a>
-          <a href="#contact">CONTACTO</a>
-          {/* <Button className="w-full h-full rounded-full">App</Button> */}
-        </nav>
       </div>
+      <nav className="hidden sm:flex flex-row items-center gap-10 text-lg">
+        <a href="#pricing">PRECIOS</a>
+        <a href="#aboutus">NOSOTROS</a>
+        <a href="#location">UBICACIÓN</a>
+        <a href="#contact">CONTACTO</a>
+        {/* <Button className="w-full h-full rounded-full">App</Button> */}
+      </nav>
     </div>
   );
 }
