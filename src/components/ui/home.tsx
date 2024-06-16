@@ -6,7 +6,7 @@ import Barra from "./barra";
 export default function Home() {
   return (
     <div className="relative min-h-[50vh]"> 
-      <div className="absolute p-4 sm:p-10 lg:pt-48 lg:pl-32 z-50 flex flex-col gap-4 mt-20 md:mt-0">
+      <div className="absolute p-4 sm:p-10 lg:pt-48 lg:pl-32 z-50 flex flex-col gap-4 mt-12 md:mt-0">
         <div className="text-4xl md:text-4xl lg:text-6xl font-bold">
           <p className="flex flex-col gap-3">DESCUBRE TU</p>
           <p>
