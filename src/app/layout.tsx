@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import Footer from "../components/ui/footer";
 import Header from "../components/ui/header";
 import { Toaster } from "../components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function RootLayout({
   children,
