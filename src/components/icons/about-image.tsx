@@ -1,7 +1,7 @@
 export default function AboutImage({ className }: { className?: string }) {
   return (
     <svg
-      className="rounded-md"
+      className={className}
       width="650"
       height="875"
       viewBox="0 0 625 940"
