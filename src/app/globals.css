@@ -81,10 +81,10 @@
 
   body {
     @apply bg-background text-foreground;
-    /* background-image: url('/fondo.jpg');
+    background-image: url('/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; */
+    background-attachment: fixed;
   }
 
   .text-shadow {

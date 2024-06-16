@@ -10,7 +10,7 @@ export default function About() {
           <AboutImage />
         </div>
         <div className="flex flex-row w-full gap-2 h-fit rounded-md">
-          <Separator className="w-8 h-40" />
+          <Separator className="w-8 h-40 bg-primary" />
           <div className="flex flex-col justify-center items-start space-y-4">
             <h2 className="text-5xl font-bold text-black text-shadow">
               ¿POR QUÉ UNIRTE A LA TRIBU FITNESS?

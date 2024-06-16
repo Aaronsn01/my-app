@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center relative">
-        <Image src={image} alt="imagen home" className="w-full h-auto object-cover" />
+        <Image src={image} alt="imagen home" className="w-full h-auto object-cover"/>
         <div className="flex justify-center items-end absolute w-full h-full mt-10">
           <Barra className="px-4 sm:px-4" />
         </div>

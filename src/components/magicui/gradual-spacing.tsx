@@ -61,7 +61,7 @@ export default function GradualSpacing({
             exit="hidden"
             variants={framerProps}
             transition={{ duration, delay: i * delayMultiple }}
-            className={cn("text-[30px] sm:text-5xl md:text-6xl lg:text-8xl font-bold text-black", className)}
+            className={cn("text-[30px] sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black", className)}
           >
             {char === " " ? <span>&nbsp;</span> : char}
           </motion.span>
