@@ -27,7 +27,7 @@ export default function Page() {
       <section ref={homeRef} id="home" className="flex items-center justify-center">
         <Home />
       </section>
-      <section ref={aboutRef} id="about" className="flex items-center justify-center">
+      {/* <section ref={aboutRef} id="about" className="flex items-center justify-center">
         <About />
       </section>
       <section ref={pricingRef} id="pricing" className="flex items-center justify-center">
@@ -38,15 +38,15 @@ export default function Page() {
       </section>
       <section ref={locationRef} id="location" className="flex flex-col items-center justify-center">
         <Location />
-      </section>
+      </section> */}
       {/* <section className="flex flex-col items-center justify-center">
         <TypingAnimation text="Usser Reviews" />
         <Reviews />
       </section> */}
-      <section ref={contactRef} id="contact" className="flex flex-col items-center justify-center">
+      {/* <section ref={contactRef} id="contact" className="flex flex-col items-center justify-center">
         <GradualSpacing text="CONTACTO"/>
         <Contact />
-      </section>
+      </section> */}
     </div>
   );
 }

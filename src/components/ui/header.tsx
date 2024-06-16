@@ -4,8 +4,8 @@ import Logo from "../icons/logo";
 
 export default function Header() {
   return (
-    <div className="h-[120px] w-full flex items-center justify-between p-5 bg-black text-white">
-      <div className="w-full flex justify-center sm:justify-start">
+    <div className="h-20 md:h-[120px] w-full flex items-center justify-center md:justify-between p-5 bg-black text-white">
+      <div className="md:w-full w-40 h-28 flex justify-center md:h-auto sm:justify-start">
         <Logo />
       </div>
       <nav className="hidden sm:flex flex-row items-center gap-10 text-lg">
