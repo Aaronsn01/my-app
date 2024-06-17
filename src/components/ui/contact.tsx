@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, FormEvent } from "react";
+import React, { useRef, useState, FormEvent } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -9,13 +9,15 @@ import { useToast } from "../../components/ui/use-toast";
 const ProfileHelpForm = ({
   formRef,
   sendEmail,
+  emailMatchError,
 }: {
   formRef: React.RefObject<HTMLFormElement>;
   sendEmail: (e: FormEvent) => void;
+  emailMatchError: boolean;
 }) => (
   <div className="flex flex-col items-center justify-center bg-black bg-opacity-95 p-7 rounded-xl w-full max-w-lg md:w-[700px]">
     <form ref={formRef} onSubmit={sendEmail} className="w-full">
-      <div className="flex flex-col md:flex-row w-full items-center justify-between gap-4 pb-5">
+      <div className="flex flex-col w-full gap-4 pb-5">
         <div className="grid w-full max-w-sm items-center gap-1.5">
           <Label htmlFor="user_name">Nombre</Label>
           <Input
@@ -37,6 +39,22 @@ const ProfileHelpForm = ({
             required
             className="text-black"
           />
+        </div>
+        <div className="grid w-full max-w-sm items-center gap-1.5">
+          <Label htmlFor="confirm_user_email">Confirmar Correo</Label>
+          <Input
+            type="email"
+            id="confirm_user_email"
+            name="confirm_user_email"
+            placeholder="Confirma tu Correo Electrónico"
+            required
+            className="text-black"
+          />
+          {emailMatchError && (
+            <span className="text-red-500 text-sm">
+              Los correos electrónicos no coinciden.
+            </span>
+          )}
         </div>
       </div>
 
@@ -60,15 +78,26 @@ const ProfileHelpForm = ({
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
   const { toast } = useToast(); 
+  const [emailMatchError, setEmailMatchError] = useState(false);
 
   const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
 
     if (form.current) {
       const formData = new FormData(form.current);
+      const userEmail = formData.get("user_email") as string;
+      const confirmUserEmail = formData.get("confirm_user_email") as string;
+
+      if (userEmail !== confirmUserEmail) {
+        setEmailMatchError(true);
+        return;
+      }
+
+      setEmailMatchError(false);
+
       const data = {
         user_name: formData.get("user_name") as string,
-        user_email: formData.get("user_email") as string,
+        user_email: userEmail,
         message: formData.get("message") as string,
       };
 
@@ -116,7 +145,7 @@ export default function Contact() {
 
   return (
     <div className="py-20 px-4">
-      <ProfileHelpForm formRef={form} sendEmail={sendEmail} />
+      <ProfileHelpForm formRef={form} sendEmail={sendEmail} emailMatchError={emailMatchError} />
     </div>
   );
 }

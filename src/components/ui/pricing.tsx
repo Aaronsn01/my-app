@@ -47,7 +47,7 @@ const Pricing = () => {
         >
           <h3 className="text-2xl font-bold mb-3">SOCIO FUNDADOR</h3>
           <p className="text-primary font-bold mb-1">Plazas limitadas</p>
-          <p className="text-gray-400 mb-3">Desde el 17 JUNIO - 1 JULIO</p>
+          <p className="text-gray-400 mb-3">Desde el 20 JUNIO - 4 JULIO</p>
           <div className="text-lg mb-4">
             <span className="line-through text-gray-500">PRECIO: 105</span>
             <span className="text-2xl text-primary ml-2">85</span>
