@@ -49,8 +49,8 @@ const Pricing = () => {
           <p className="text-primary font-bold mb-1">Plazas limitadas</p>
           <p className="text-gray-400 mb-3">Desde el 17 JUNIO - 1 JULIO</p>
           <div className="text-lg mb-4">
-            <span className="line-through text-gray-500">PRECIO: 110</span>
-            <span className="text-2xl text-primary ml-2">86</span>
+            <span className="line-through text-gray-500">PRECIO: 105</span>
+            <span className="text-2xl text-primary ml-2">85</span>
           </div>
           <ul className="list-none mb-4 text-lg space-y-1">
             <li>WOD CrossFit</li>
