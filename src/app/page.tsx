@@ -12,6 +12,7 @@ import GradualSpacing from "@/components/magicui/gradual-spacing";
 import AboutUs from "@/components/ui/about-us";
 import Pricing from "@/components/ui/pricing";
 import WordPullUp from "@/components/magicui/word-pull-up";
+import MyCarousel from "@/components/ui/carousel";
 
 export default function Page() {
   const homeRef = useRef(null);
@@ -35,6 +36,9 @@ export default function Page() {
       </section>
       <section className="flex flex-col items-center justify-center">
         <AboutUs/>
+      </section>
+      <section className="flex flex-col items-center justify-center">
+        <MyCarousel/>
       </section>
       <section ref={locationRef} id="location" className="flex flex-col items-center justify-center">
         <Location />
