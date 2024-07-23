@@ -129,17 +129,21 @@ const Carousel = React.forwardRef<
     // Nuevo efecto para el auto-scroll
     React.useEffect(() => {
       const interval = setInterval(() => {
-        scrollNext()
-      }, 3000) // Cambiar de imagen cada 3 segundos
+        if (api && api.canScrollNext()) {
+          scrollNext()
+        } else if (api) {
+          api.scrollTo(0)
+        }
+      }, 4000) // Cambiar de imagen cada 4 segundos
 
       return () => clearInterval(interval)
-    }, [scrollNext])
+    }, [api, scrollNext])
 
     return (
       <CarouselContext.Provider
         value={{
           carouselRef,
-          api: api,
+          api: api!,
           opts,
           orientation:
             orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
