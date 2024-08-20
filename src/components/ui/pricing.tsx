@@ -45,18 +45,18 @@ const Pricing = () => {
           animate={controls}
           transition={{ duration: 1.5 }}
         >
-          <h3 className="text-2xl font-bold mb-3">SOCIO FUNDADOR</h3>
-          <p className="text-primary font-bold mb-1">Plazas limitadas</p>
-          <p className="text-gray-400 mb-3">Desde el 20 JUNIO - 4 JULIO</p>
+          <h3 className="text-2xl font-bold mb-3">TARIDAS AGOSTO</h3>
+          <p className="text-primary font-bold mb-1">Descuentos de apertura</p>
+          <p className="text-gray-400 mb-3">Desde el 20 JUNIO - 31 AGOSTO</p>
           <div className="text-lg mb-4">
-            <span className="line-through text-gray-500">PRECIO: 105</span>
-            <span className="text-2xl text-primary ml-2">85</span>
+            <span className="line-through text-gray-500"></span>
+            <span className="text-2xl text-primary ml-2">DESDE 85€</span>
           </div>
           <ul className="list-none mb-4 text-lg space-y-1">
             <li>WOD CrossFit</li>
             <li>Clases Hyrox</li>
             <li>Halterofilia, Gimnásticos y movilidad</li>
-            <li className="text-primary">1 CLASE POR DÍA</li>
+            <li className="text-primary">PARA TODOS</li>
           </ul>
           <Separator orientation="horizontal" className="my-4 h-[2px] bg-gray-500"/>
           <p className="text-gray-400 mb-4">
@@ -67,7 +67,7 @@ const Pricing = () => {
           </p>
           <Separator orientation="horizontal" className="my-4 h-[2px] bg-gray-500"/>
           <p className="text-2xl font-bold text-center mb-2">
-            ¿LISTO PARA TU <span className="text-primary">PRÓXIMA</span> CLASE?
+            ¿LISTO PARA TU <span className="text-primary">ALCANZAR</span> TUS METAS?
           </p>
           <a 
             href="#contact" 
