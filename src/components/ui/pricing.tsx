@@ -50,7 +50,7 @@ const Pricing = () => {
           <p className="text-gray-400 mb-3">Desde el 20 JUNIO - 31 AGOSTO</p>
           <div className="text-lg mb-4">
             <span className="line-through text-gray-500"></span>
-            <span className="text-2xl text-primary ml-2">DESDE 85€</span>
+            <span className="text-2xl text-primary ml-2">DESDE 85</span>
           </div>
           <ul className="list-none mb-4 text-lg space-y-1">
             <li>WOD CrossFit</li>
@@ -67,7 +67,7 @@ const Pricing = () => {
           </p>
           <Separator orientation="horizontal" className="my-4 h-[2px] bg-gray-500"/>
           <p className="text-2xl font-bold text-center mb-2">
-            ¿LISTO PARA TU <span className="text-primary">ALCANZAR</span> TUS METAS?
+            ¿LIST@S PARA TU <span className="text-primary">ALCANZAR</span> TUS METAS?
           </p>
           <a 
             href="#contact" 
