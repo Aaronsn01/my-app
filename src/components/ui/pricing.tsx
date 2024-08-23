@@ -45,7 +45,7 @@ const Pricing = () => {
           animate={controls}
           transition={{ duration: 1.5 }}
         >
-          <h3 className="text-2xl font-bold mb-3">TARIDAS AGOSTO</h3>
+          <h3 className="text-2xl font-bold mb-3">TARIFAS AGOSTO</h3>
           <p className="text-primary font-bold mb-1">Descuentos de apertura</p>
           <p className="text-gray-400 mb-3">Desde el 20 JUNIO - 31 AGOSTO</p>
           <div className="text-lg mb-4">
@@ -56,18 +56,18 @@ const Pricing = () => {
             <li>WOD CrossFit</li>
             <li>Clases Hyrox</li>
             <li>Halterofilia, Gimnásticos y movilidad</li>
-            <li className="text-primary">PARA TODOS</li>
+            <li className="text-primary">PARA TODOS LOS NIVELES</li>
           </ul>
           <Separator orientation="horizontal" className="my-4 h-[2px] bg-gray-500"/>
           <p className="text-gray-400 mb-4">
-            ¿Quieres saber el resto de las tarifas? Te animamos a venir a La Jungla y conocer nuestro centro deportivo con cafetería en Paracuellos.
+            ¿Quieres saber el resto de las tarifas? Te animamos a venir a La Jungla y conocer nuestro centro deportivo con cafetería en Miramadrid.
           </p>
           <p className="text-lg mb-2">
             Si quieres conseguir tu sesión de prueba gratuita, ponte en contacto con nosotros y consigue tu invitación.
           </p>
           <Separator orientation="horizontal" className="my-4 h-[2px] bg-gray-500"/>
           <p className="text-2xl font-bold text-center mb-2">
-            ¿LIST@S PARA TU <span className="text-primary">ALCANZAR</span> TUS METAS?
+            ¿LIST@S PARA <span className="text-primary">ALCANZAR</span> TUS METAS?
           </p>
           <a 
             href="#contact" 
