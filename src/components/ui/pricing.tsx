@@ -53,9 +53,9 @@ const Pricing = () => {
             <span className="text-2xl text-primary ml-2">DESDE 65</span>
           </div>
           <ul className="list-none mb-4 text-lg space-y-1">
-            <li>WOD CrossFit</li>
-            <li>Clases Hyrox</li>
-            <li>Halterofilia, Gimnásticos y movilidad</li>
+            <li>CrossFit</li>
+            <li>Hyrox</li>
+            <li>Halterofilia, Gimnásticos y Movilidad</li>
             <li className="text-primary">PARA TODOS LOS NIVELES</li>
           </ul>
           <Separator orientation="horizontal" className="my-4 h-[2px] bg-gray-500"/>
