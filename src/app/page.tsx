@@ -37,7 +37,7 @@ export default function Page() {
       <section className="flex flex-col items-center justify-center">
         <AboutUs/>
       </section>
-      <section className="flex flex-col items-center justify-center">
+      <section className="flex-col items-center justify-center hidden md:block">
         <MyCarousel/>
       </section>
       <section ref={locationRef} id="location" className="flex flex-col items-center justify-center">
