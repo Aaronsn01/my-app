@@ -45,12 +45,12 @@ const Pricing = () => {
           animate={controls}
           transition={{ duration: 1.5 }}
         >
-          <h3 className="text-2xl font-bold mb-3">TARIFAS AGOSTO</h3>
-          <p className="text-primary font-bold mb-1">Descuentos de apertura</p>
-          <p className="text-gray-400 mb-3">Desde el 20 JUNIO - 31 AGOSTO</p>
+          <h3 className="text-2xl font-bold mb-3">TARIFAS</h3>
+          <p className="text-primary font-bold mb-1">Comienza el 2025 en forma</p>
+          <p className="text-gray-400 mb-3">Desde 2 clases por semana</p>
           <div className="text-lg mb-4">
             <span className="line-through text-gray-500"></span>
-            <span className="text-2xl text-primary ml-2">DESDE 65</span>
+            <span className="text-2xl text-primary ml-2">Promociones y descuentos en ENERO</span>
           </div>
           <ul className="list-none mb-4 text-lg space-y-1">
             <li>CrossFit</li>
@@ -60,10 +60,10 @@ const Pricing = () => {
           </ul>
           <Separator orientation="horizontal" className="my-4 h-[2px] bg-gray-500"/>
           <p className="text-gray-400 mb-4">
-            ¿Quieres saber el resto de las tarifas? Te animamos a venir a La Jungla y conocer nuestro centro deportivo con cafetería en Miramadrid.
+            ¿Quieres saber el resto de las tarifas? Te animamos a venir a La Jungla para comenzar el cambio guiado por profesionales.
           </p>
           <p className="text-lg mb-2">
-            Si quieres conseguir tu sesión de prueba gratuita, ponte en contacto con nosotros y consigue tu invitación.
+            Pruéba una sesión sin compromiso.
           </p>
           <Separator orientation="horizontal" className="my-4 h-[2px] bg-gray-500"/>
           <p className="text-2xl font-bold text-center mb-2">
