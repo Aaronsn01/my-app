@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col items-center md:items-start">
         <div className="w-full flex flex-col md:flex-row items-center justify-between mb-4">
           <p className="text-2xl font-bold text-center md:text-left">
-            ¿LISTO PARA TU <span className="text-primary">PRÓXIMA</span> CLASE?
+            ¿PREPARADO@S PARA <span className="text-primary">CONSEGUIR</span>TUS OBJETIVOS?
           </p>
           <div className="flex flex-row items-center justify-center md:justify-end gap-4 mt-4 md:mt-0">
             <Link
