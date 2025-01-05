@@ -10,7 +10,7 @@ export default function About() {
           <Separator orientation="vertical" className="w-1 h-8 md:w-8 md:h-40 bg-primary" />
           <div className="flex flex-col justify-center items-start space-y-4">
             <h2 className="text-2xl justify-center md:text-5xl font-bold text-black text-shadow">
-              ¿POR QUÉ UNIRTE A LA TRIBU FITNESS?
+              ¿POR QUÉ UNIRTE A LA JUNGLA?
             </h2>
             <div className="flex flex-col justify-center items-start gap-5 py-10">
               <div className="text-lg md:text-xl text-black px-4 py-3 rounded-md">
