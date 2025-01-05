@@ -45,25 +45,25 @@ const Pricing = () => {
           animate={controls}
           transition={{ duration: 1.5 }}
         >
-          <h3 className="text-2xl font-bold mb-3">TARIFAS</h3>
-          <p className="text-primary font-bold mb-1">Comienza el 2025 en forma</p>
-          <p className="text-gray-400 mb-3">Desde 2 clases por semana</p>
+          <h3 className="text-2xl font-bold mb-3">TARIFAS FLEXIBLES</h3>
+          <p className="text-primary font-bold mb-1">Nos adaptamos a tu día a día</p>
+          <p className="text-gray-400 mb-3">Bonos de 5, 8 , 12 , 15 , 20 y 30 clases al mes</p>
           <div className="text-lg mb-4">
             <span className="line-through text-gray-500"></span>
-            <span className="text-2xl text-primary ml-2">Promociones y descuentos en ENERO</span>
+            <span className="text-2xl text-primary ml-2">Descuentos exclusivos en el local</span>
           </div>
           <ul className="list-none mb-4 text-lg space-y-1">
-            <li>CrossFit</li>
+            <li>CrossFit para todos</li>
             <li>Hyrox</li>
-            <li>Halterofilia, Gimnásticos y Movilidad</li>
-            <li className="text-primary">PARA TODOS LOS NIVELES</li>
+            <li>Movilidad, Halterofilia y Gimnásticos</li>
+            <li className="text-primary">Clases aptas para todos los niveles</li>
           </ul>
           <Separator orientation="horizontal" className="my-4 h-[2px] bg-gray-500"/>
           <p className="text-gray-400 mb-4">
-            ¿Quieres saber el resto de las tarifas? Te esperamos en la Calle Quevedo 15 (MIRAMADRID)
+            ¿Quieres probar antes de apuntarte? Escríbenos por whatsapp o ven al gimnasio para reservar tu prueba gratuita
           </p>
           <p className="text-lg mb-2">
-            Pruéba una sesión antes de apuntarte.
+           Anímate y conoce una nueva forma de ponerte en forma.
           </p>
           <Separator orientation="horizontal" className="my-4 h-[2px] bg-gray-500"/>
           <p className="text-2xl font-bold text-center mb-2">
