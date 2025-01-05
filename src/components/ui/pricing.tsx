@@ -60,10 +60,10 @@ const Pricing = () => {
           </ul>
           <Separator orientation="horizontal" className="my-4 h-[2px] bg-gray-500"/>
           <p className="text-gray-400 mb-4">
-            ¿Quieres saber el resto de las tarifas? Te animamos a venir a La Jungla para comenzar el cambio guiado por profesionales.
+            ¿Quieres saber el resto de las tarifas? Te esperamos en la Calle Quevedo 15 (MIRAMADRID)
           </p>
           <p className="text-lg mb-2">
-            Pruéba una sesión sin compromiso.
+            Pruéba una sesión antes de apuntarte.
           </p>
           <Separator orientation="horizontal" className="my-4 h-[2px] bg-gray-500"/>
           <p className="text-2xl font-bold text-center mb-2">
