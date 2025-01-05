@@ -6,15 +6,15 @@ import SlightFlip from "../magicui/flip-text";
 export default function AboutUs() {
   const plans = [
     {
-      photo: Charly,
-      position: "SOCIO Y COACH",
+      photo: charly,
+      position: "SOCIO",
       title: "Charly",
       text: "Graduado en Ciencias de la Actividad Física y del Deporte CAFYD",
       subtitle: "Certificado L1 en CrossFit",
     },
     {
       photo: jose,
-      position: "SOCIO Y COACH",
+      position: "SOCIO",
       title: "Jose",
       text: "Graduado universitario Ciencias del Deporte UPM",
       subtitle:
