@@ -8,9 +8,9 @@ export default function Home() {
     <div className="relative min-h-[50vh]">
       <div className="absolute p-4 sm:p-10 lg:pt-48 lg:pl-32 z-50 flex flex-col gap-4 mt-12 md:mt-0">
         <div className="text-4xl md:text-4xl lg:text-6xl font-bold">
-          <p className="flex flex-col gap-3">ENTRENA TU,</p>
+          <p className="flex flex-col gap-3">ENTRENA TU</p>
           <p>
-            <span className="text-primary">SALUD, </span>
+            <span className="text-primary">SALUD </span>
             <span> .</span>
           </p>
         </div>
