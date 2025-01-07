@@ -8,14 +8,14 @@ export default function Home() {
     <div className="relative min-h-[50vh]">
       <div className="absolute p-4 sm:p-10 lg:pt-48 lg:pl-32 z-50 flex flex-col gap-4 mt-12 md:mt-0">
         <div className="text-4xl md:text-4xl lg:text-6xl font-bold">
-          <p className="flex flex-col gap-3">ENTRENA,</p>
+          <p className="flex flex-col gap-3">ENTRENA TU,</p>
           <p>
-            <span className="text-primary">SUPERA, </span>
-            <span> VIVE.</span>
+            <span className="text-primary">S, </span>
+            <span> SALUD.</span>
           </p>
         </div>
         <div className="text-[10px] md:text-xl lg:text-2xl font-bold">
-          <p className="flex flex-col gap-3">BIENVENID@S A LA JUNGLA</p>
+          <p className="flex flex-col gap-3">CrossFit y Hyrox para todo el mundo</p>
         </div>
       </div>
       <div className="flex justify-center relative">
