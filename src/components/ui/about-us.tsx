@@ -7,14 +7,14 @@ export default function AboutUs() {
   const plans = [
     {
       photo: charly,
-      position: "SOCIO",
+      position: "COACH",
       title: "Charly",
       text: "Graduado en Ciencias de la Actividad Física y del Deporte CAFYD",
       subtitle: "Certificado L1 en CrossFit",
     },
     {
       photo: jose,
-      position: "SOCIO",
+      position: "COACH",
       title: "Jose",
       text: "Graduado universitario Ciencias del Deporte UPM",
       subtitle:
