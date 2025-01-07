@@ -15,7 +15,7 @@ export default function Home() {
           </p>
         </div>
         <div className="text-[10px] md:text-xl lg:text-2xl font-bold">
-          <p className="flex flex-col gap-3">CrossFit y Hyrox para todo el mundo</p>
+          <p className="flex flex-col gap-3">CROSSFIT Y HYROX PARA TODO EL MUNDO</p>
         </div>
       </div>
       <div className="flex justify-center relative">
