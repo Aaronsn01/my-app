@@ -10,8 +10,8 @@ export default function Home() {
         <div className="text-4xl md:text-4xl lg:text-6xl font-bold">
           <p className="flex flex-col gap-3">ENTRENA TU,</p>
           <p>
-            <span className="text-primary">S, </span>
-            <span> SALUD.</span>
+            <span className="text-primary">SALUD, </span>
+            <span> .</span>
           </p>
         </div>
         <div className="text-[10px] md:text-xl lg:text-2xl font-bold">
